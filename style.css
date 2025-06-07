@@ -1,0 +1,91 @@
+/* Base reset and box-sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 60px;
+}
+
+/* Container */
+.container {
+    background: #fff;
+    width: 400px;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Input & Button Group */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#inputField {
+    flex: 1;
+    height: 46px;
+    padding: 0 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.2s;
+}
+
+#inputField:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Add Button */
+#addToDo {
+    height: 46px;
+    width: 46px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addToDo:hover {
+    background-color: #0056b3;
+}
+
+/* To-Do List Container */
+.to-dos {
+    margin-top: 10px;
+}
+
+/* Individual To-Do Item */
+.paragraph-styling {
+    background-color: #f8f9fa;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.paragraph-styling:hover {
+    background-color: #e2e6ea;
+}
+
+/* Optional: Completed Item Style */
+.paragraph-styling.completed {
+    text-decoration: line-through;
+    color: gray;
+    background-color: #e0e0e0;
+}
